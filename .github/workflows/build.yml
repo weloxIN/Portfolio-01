@@ -20,5 +20,5 @@ jobs:
       - name: Push to Docker Hub
         run: |
           docker images
-          docker tag $(docker images --format '{{.Repository}}:{{.Tag}}' | head -1) ${{ secrets.DOCKER_USERNAME }}/soft-osint:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/soft-osint:latest
+          docker tag $(docker images --format '{{.Repository}}:{{.Tag}}' | head -1) ${{ secrets.DOCKER_USERNAME }}/portfolio1:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/portfolio1:latest
